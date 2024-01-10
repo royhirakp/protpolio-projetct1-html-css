@@ -1,0 +1,38 @@
+/* css for the home route  */
+.routeContainer :first-child main {
+  overflow: auto;
+  height: 400px;
+}
+.routeContainer :first-child main section {
+  /* background-color: aliceblue; */
+  float: left;
+  width: 50%;
+}
+section {
+  height: 100%;
+}
+.textInformation {
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+
+  flex-direction: column;
+  padding-left: 5%;
+}
+.textInformation h3 {
+  margin: 0;
+}
+.nameAndCountryContainer {
+  display: flex;
+  flex-direction: row;
+}
+.nameAndCountryContainer h1 {
+  padding: 5px 0;
+}
+
+.imageContainerSectionTag {
+}
+.imageContainer {
+  max-width: 350px;
+  margin: auto;
+}

@@ -1,0 +1,55 @@
+#About {
+}
+
+#About main {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  height: 450px;
+  border: 10px solid;
+}
+
+section.aboutSectionAnimation {
+  flex: 2;
+  border: 1px solid red;
+}
+section.aboutSectionAnimation div {
+  border: 1px solid;
+}
+
+section.myselfSection {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3%;
+  gap: 15px;
+}
+section.myselfSection h1 {
+  color: aliceblue;
+  /* padding-left: 40px; */
+}
+
+section.myselfSection p {
+  color: rgb(224, 61, 61);
+  max-width: 550px;
+  line-height: 22px;
+  text-indent: 40px;
+}
+section.myselfSection p::first-letter {
+  font-size: 200%;
+}
+
+.listofmyInfo ul {
+  list-style: none;
+  overflow: auto;
+
+  /* float: right; */
+}
+.skills {
+  color: #ffff;
+}
+.listofmyInfo ul li {
+  float: left;
+  padding-right: 4%;
+}
