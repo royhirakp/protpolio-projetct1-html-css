@@ -60,15 +60,9 @@ li a:active {
   color: blue;
 }
 li a:visited {
-  /* color: yellow; */
 }
 /* css for routes  */
 .routeContainer div {
-  /* height: 
-    
-    px; */
-  /* max-width: 800px; */
-  /* margin: auto; */
 }
 
 .routeContainer div main {
