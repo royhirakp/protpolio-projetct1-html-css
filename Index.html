@@ -14,9 +14,12 @@
     <!-- css files -->
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/stylesForHeader.css" />
-
     <link rel="stylesheet" href="style/stylesForHome.css" />
     <link rel="stylesheet" href="style/stylesForAbout.css" />
+    <link rel="stylesheet" href="/style/styleForService.css" />
+    <link rel="stylesheet" href="/style/styleProtpolio.css" />
+    <link rel="stylesheet" href="/style/styleContact.css" />
+    <!-- <link rel="stylesheet" href="../style" /> -->
   </head>
   <body>
     <div class="mainContainer" id="Home">
@@ -103,15 +106,15 @@
                   Hi! I'm Hirak Roy, from INDIA.
                 </h1>
 
-                <div style="width: 50px">
+                <div style="max-width: 50px">
                   <img
-                    src="/public/india-flag (1).svg"
+                    src="public/india-flag (1).svg"
                     alt="indian flag svg"
                     style="width: 100%; height: 100%"
                   />
                 </div>
               </div>
-              <h5>Welcome to my page.....</h5>
+              <h5 id="welcomeToMyPage">Welcome to my page.....</h5>
 
               <div class="linkedinConnect">
                 <p>Contact me</p>
@@ -142,7 +145,7 @@
               <div class="imageContainer">
                 <img
                   style="height: 100%; width: 100%"
-                  src="/public/mostnew.png"
+                  src="public/mostnew.png"
                   alt=""
                 />
               </div>
@@ -178,16 +181,7 @@
                   <ul>
                     <li>
                       <h4 style="color: #e4dbdb">
-                        <strong
-                          style="
-                            font-weight: 600;
-                            font-size: 22px;
-                            color: rgb(237, 10, 10);
-                            text-shadow: 19px 12px 4px rgb(207 204 108 / 50%);
-                            /* -webkit-text-stroke: 0.1px #ffff; */
-                          "
-                        >
-                          MERN Stack </strong
+                        <strong class="mainSlikkMERNstack"> MERN Stack </strong
                         >, Html, Css, JavaScript
                       </h4>
                     </li>
@@ -207,9 +201,108 @@
           </main>
         </div>
         <!-- code for serviceeee -->
-        <div id="Service" style="height: 300px"><main>ser</main></div>
-        <div id="Portfolio" style="height: 300px"><main>ppp</main></div>
-        <div id="Contact" style="height: 300px"><main>main</main></div>
+
+        <div id="Service">
+          <main>
+            <h1>Services:</h1>
+          </main>
+          <main>
+            <div class="serviceCardContainer">
+              <div>
+                <h2>Frontend</h2>
+                <p>
+                  Technologies: Next.js, React.js, Redux, HTML, CSS, JavaScript,
+                  Material UI, Tailwind, Bootstrap,
+                </p>
+              </div>
+            </div>
+            <div class="serviceCardContainer">
+              <div>
+                <h2>BackEnd</h2>
+                <p>Technologies: Express.js. Mongodb, SQL, Nestjs</p>
+              </div>
+            </div>
+          </main>
+        </div>
+
+        <div id="Portfolio">
+          <main>
+            <div>
+              <h1>protpolio</h1>
+            </div>
+            <div class="protpolioCradContainer">
+              <div class="card">
+                <div class="content">
+                  <div class="back">
+                    <div class="back-content">
+                      <div
+                        style="
+                          background: url(../public/mostnew.png);
+                          width: 100%;
+                          height: 100%;
+                        "
+                      >
+                        app name
+                      </div>
+                      <!-- <strong>Hover Me</strong> -->
+                    </div>
+                  </div>
+                  <div class="front">
+                    <div class="img">
+                      <div class="circle"></div>
+                      <div class="circle" id="right"></div>
+                      <div class="circle" id="bottom"></div>
+                    </div>
+                    <div>content</div>
+
+                    <!-- <div class="front-content">
+                      <small class="badge">Pasta</small>
+                      <div class="description">description</div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <button>see more</button>
+          </main>
+        </div>
+        <div id="Contact">
+          <main>
+            <h1>contact</h1>
+            <div>
+              <section>
+                <p>email</p>
+                <p>phone no</p>
+                <p>linkedin, github, skype link</p>
+              </section>
+              <section>
+                <div class="form-container">
+                  <form class="form">
+                    <div class="form-group">
+                      <label for="email">Company Email</label>
+                      <input type="text" id="email" name="email" required="" />
+                    </div>
+                    <div class="form-group">
+                      <label for="textarea">How Can We Help You?</label>
+                      <textarea
+                        name="textarea"
+                        id="textarea"
+                        rows="10"
+                        cols="50"
+                        required=""
+                      >
+                      </textarea>
+                    </div>
+                    <button class="form-submit-btn" type="submit">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </section>
+            </div>
+          </main>
+        </div>
       </div>
     </div>
 

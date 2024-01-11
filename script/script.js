@@ -104,24 +104,23 @@ function showMyInfo(route) {
   setTimeout(() => {
     if (route === "Skills") {
       document.getElementById("displayMySelf").innerHTML = `
-        <ul>
-        <li>
-          <h4 style="color: #e4dbdb">
-            MERN Stack, Html, Css, JavaScript
-          </h4>
-        </li>
-        <li>
-          <h4>
-            NextJs, Redux, Material UI,and other libraries for the
-            frontend
-          </h4>
-        </li>
-        <li>
-          <h4>Typescript, Nestjs, SQL, Git, postman</h4>
-        </li>
-    
-       
-      </ul>
+      <ul>
+      <li>
+        <h4 style="color: #e4dbdb">
+          <strong class="mainSlikkMERNstack"> MERN Stack </strong
+          >, Html, Css, JavaScript
+        </h4>
+      </li>
+      <li>
+        <h4>
+          NextJs, Redux, Material UI,and other libraries for the
+          frontend
+        </h4>
+      </li>
+      <li>
+        <h4>Typescript, Nestjs, SQL, Git, postman</h4>
+      </li>
+    </ul>
         `;
     } else if (route === "Experience") {
       document.getElementById("displayMySelf").innerHTML = `

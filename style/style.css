@@ -16,3 +16,13 @@ body {
 }
 .mainContainer {
 }
+
+/* css for routes container  */
+.routeContainer div {
+}
+
+.routeContainer div main {
+  max-width: 1200px;
+  margin: auto;
+  /* border: 1px solid; */
+}

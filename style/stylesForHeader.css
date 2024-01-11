@@ -61,15 +61,6 @@ li a:active {
 }
 li a:visited {
 }
-/* css for routes  */
-.routeContainer div {
-}
-
-.routeContainer div main {
-  max-width: 1200px;
-  margin: auto;
-  /* border: 1px solid; */
-}
 
 /* resume button */
 header nav .resumeButtonContainer {

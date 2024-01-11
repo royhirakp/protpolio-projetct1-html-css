@@ -7,15 +7,14 @@
   /* background-color: aliceblue; */
   float: left;
   width: 50%;
+  height: 100%;
 }
 section {
-  height: 100%;
 }
 .textInformation {
   /* text-align: center; */
   justify-content: center;
   display: flex;
-
   flex-direction: column;
   padding-left: 5%;
 }
@@ -25,6 +24,10 @@ section {
 .nameAndCountryContainer {
   display: flex;
   flex-direction: row;
+  /* border: 1px solid; */
+  justify-content: space-between;
+  width: 425px;
+  /* gap: 1px; */
 }
 .nameAndCountryContainer h1 {
   padding: 5px 0;
@@ -58,7 +61,7 @@ div.linkedinConnect button {
 }
 
 div.linkedinConnect button:hover {
-  transform: scale(1.1) rotate(-360deg) translateY(-0.5em);
+  transform: scale(1.3) rotate(-360deg) translateY(-0.5em);
   box-shadow: 0 0 20px 0 rgba(29, 161, 242, 0.5);
 }
 
@@ -68,7 +71,7 @@ div.linkedinConnect button:hover {
 }
 
 .icon:hover {
-  transform: scale(5);
+  transform: scale(9);
   filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.9));
 }
 .imageContainerSectionTag {
@@ -81,13 +84,15 @@ div.linkedinConnect button:hover {
 /* animation for text */
 
 #nameandCountry {
+  /* border: 1px solid #ffffff; */
+  width: 500px;
   color: #ffff;
   font-weight: 400;
-  /* overflow: hidden; 
-  white-space: nowrap; 
-  border-right: 2px solid #fff; */
-  /* animation: typing 15s steps(40, end) infinite, */
-  /* blink-caret 0.75s step-end infinite, fade-out 2s forwards; */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  animation: typing 15s steps(40, end) infinite,
+    blink-caret 0.75s step-end infinite, fade-out 2s forwards;
 }
 
 @keyframes typing {
@@ -128,5 +133,19 @@ div.linkedinConnect button:hover {
   }
   to {
     opacity: 1;
+  }
+}
+
+h5#welcomeToMyPage {
+  animation: slideIn 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
   }
 }
