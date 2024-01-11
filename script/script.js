@@ -22,6 +22,63 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//
+// logic for change the bg color of the header when scroll start and change a color when scroll
+document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("scroll", function () {
+    const scrollPercentage = document.documentElement.scrollTop;
+    if (scrollPercentage < 5) {
+      document.getElementsByTagName("header")[0].style.backgroundColor =
+        "black";
+    } else {
+      document.getElementsByTagName("header")[0].style.backgroundColor =
+        "#3c3c3c";
+    }
+    console.log(scrollPercentage);
+
+    if (scrollPercentage < 300) {
+      // home
+      document.getElementById("homeNvigation").style.color = "red";
+      document.getElementById("aboutNvigation").style.color = "#ffff";
+      document.getElementById("serviceNvigation").style.color = "#ffff";
+      document.getElementById("protfolioNvigation").style.color = "#ffff";
+      document.getElementById("contactNvigation").style.color = "#ffff";
+
+      // console.log(document.getElementById("homeNvigation"));
+    }
+
+    if (scrollPercentage > 300 && scrollPercentage < 750) {
+      document.getElementById("homeNvigation").style.color = "#ffff";
+      document.getElementById("aboutNvigation").style.color = "red";
+      document.getElementById("serviceNvigation").style.color = "#ffff";
+      document.getElementById("protfolioNvigation").style.color = "#ffff";
+      document.getElementById("contactNvigation").style.color = "#ffff";
+    }
+    if (scrollPercentage > 750 && scrollPercentage < 1090) {
+      document.getElementById("homeNvigation").style.color = "#ffff";
+      document.getElementById("aboutNvigation").style.color = "#ffff";
+      document.getElementById("serviceNvigation").style.color = "red";
+      document.getElementById("protfolioNvigation").style.color = "#ffff";
+      document.getElementById("contactNvigation").style.color = "#ffff";
+    }
+    if (scrollPercentage > 1090 && scrollPercentage < 1147) {
+      document.getElementById("homeNvigation").style.color = "#ffff";
+      document.getElementById("aboutNvigation").style.color = "#ffff";
+      document.getElementById("serviceNvigation").style.color = "#ffff";
+      document.getElementById("protfolioNvigation").style.color = "red";
+      document.getElementById("contactNvigation").style.color = "#ffff";
+    }
+    if (scrollPercentage > 1147 && scrollPercentage < 2000) {
+      document.getElementById("homeNvigation").style.color = "#ffff";
+      document.getElementById("aboutNvigation").style.color = "#ffff";
+      document.getElementById("serviceNvigation").style.color = "#ffff";
+      document.getElementById("protfolioNvigation").style.color = "#ffff";
+      document.getElementById("contactNvigation").style.color = "red";
+    }
+  });
+});
+
+//logic for change the a tag coloer when user click in it
 function navBarATagOnClick(e) {
   // let navBar = document.getElementsByTagName("nav")[0];
   const links = document.querySelectorAll("nav ul li a");
@@ -42,16 +99,75 @@ function showMyInfo(route) {
   // console.log(route);
   let display = document.getElementById("displayMySelf");
   // console.log(display);
+  display.classList.add("fade-out");
 
-  document.getElementById("displayMySelf").innerHTML = route;
+  setTimeout(() => {
+    if (route === "Skills") {
+      document.getElementById("displayMySelf").innerHTML = `
+        <ul>
+        <li>
+          <h4 style="color: #e4dbdb">
+            MERN Stack, Html, Css, JavaScript
+          </h4>
+        </li>
+        <li>
+          <h4>
+            NextJs, Redux, Material UI,and other libraries for the
+            frontend
+          </h4>
+        </li>
+        <li>
+          <h4>Typescript, Nestjs, SQL, Git, postman</h4>
+        </li>
+    
+       
+      </ul>
+        `;
+    } else if (route === "Experience") {
+      document.getElementById("displayMySelf").innerHTML = `
+      <ul>
+      
+  
+      <li>
+        <h4>
+          I may not have prior experience in web development, as I
+          come from a different background. However, I have acquired
+          the necessary technologies that are industry-tested and can
+          confidently apply them
+        </h4>
+      </li>
+     
+    </ul>
+      
+      `;
+    } else if (route === "Education") {
+      document.getElementById("displayMySelf").innerHTML = `
+      <ul>
+     
+      <li>
+        <h4>
+          Bachelor of Technology in Electrical Engineering; MAKAUT,
+          West Bengal(2020)
+        </h4>
+      </li>
+      <li>
+        <h4>
+          Completed a 6-month full-stack course on the MERN stack; 10X
+          Academy(diploma)
+        </h4>
+      </li>
+    </ul>
+      
+      `;
+    }
+    display.classList.remove("fade-out");
+  }, 500);
+
   //make the change css of the list item wthe user click
-
   let listArray = document.querySelectorAll(".listofmyInfo ul li");
   listArray.forEach((item, i) => {
     if (item.innerHTML === route) {
-      console.log(item);
-
       item.style.color = "aliceblue";
-    } else item.style.color = "red";
+    } else item.style.color = "yellow";
   });
 }

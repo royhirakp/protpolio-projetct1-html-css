@@ -6,7 +6,6 @@
   margin: auto;
   display: flex;
   height: 450px;
-  border: 10px solid;
 }
 
 section.aboutSectionAnimation {
@@ -26,14 +25,14 @@ section.myselfSection {
   gap: 15px;
 }
 section.myselfSection h1 {
-  color: aliceblue;
+  color: rgb(224, 61, 61);
   /* padding-left: 40px; */
 }
 
 section.myselfSection p {
-  color: rgb(224, 61, 61);
+  color: #ffff;
   max-width: 550px;
-  line-height: 22px;
+  line-height: 25px;
   text-indent: 40px;
 }
 section.myselfSection p::first-letter {
@@ -46,10 +45,79 @@ section.myselfSection p::first-letter {
 
   /* float: right; */
 }
-.skills {
-  color: #ffff;
+
+.listofmyInfo ul li {
+  /* border: 1px solid; */
+  /* overflow: auto; */
 }
+
+/* hover effets on buttons or list item */
+
 .listofmyInfo ul li {
   float: left;
-  padding-right: 4%;
+  cursor: pointer;
+  --color: #7d0808;
+  color: yellow;
+  font-family: inherit;
+  padding: 3px 10px;
+  font-size: large;
+  font-weight: 700;
+  line-height: 1.5em;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.5s;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.listofmyInfo ul li:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 90px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.listofmyInfo ul li:hover {
+  color: #ffff !important;
+  /* border: 10px solid; */
+}
+
+.listofmyInfo ul li:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.listofmyInfo ul li:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+#skills {
+  color: #ffff;
+}
+/* css for display itms  */
+#displayMySelf {
+  height: 160px;
+  border: 2px solid yellow;
+  border-radius: 15px;
+  padding-right: 10px;
+  /* background-color: #1e1c1c; */
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #14161d 0%,
+    #646264 46%,
+    #520505 100%
+  );
+}
+#displayMySelf ul li {
+  color: #ffff;
+}
+.fade-out {
+  opacity: 0.1;
+  transition: opacity 0.5s ease-out;
 }

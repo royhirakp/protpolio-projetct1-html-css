@@ -14,7 +14,7 @@
           <div>aboutSection Animation</div>
         </section>
         <section class="myselfSection">
-          <h1 style="color: aliceblue">My Self</h1>
+          <h1>My Self</h1>
           <p>
             An ambitious individual who is good at problem-solving and
             programming, with an emphasis on writing clean and maintainable
@@ -25,13 +25,40 @@
           <div>
             <div class="listofmyInfo">
               <ul>
-                <li class="skills" onclick="showMyInfo(`skills`)">skills</li>
-                <li onclick="showMyInfo(`experience`)">experience</li>
-                <li onclick="showMyInfo(`education`)">education</li>
+                <li id="skills" onclick="showMyInfo(`Skills`)">Skills</li>
+                <li onclick="showMyInfo(`Experience`)">Experience</li>
+                <li onclick="showMyInfo(`Education`)">Education</li>
               </ul>
             </div>
 
-            <div id="displayMySelf">eeeeeeeeeeeeee</div>
+            <div id="displayMySelf">
+              <ul>
+                <li>
+                  <h4 style="color: #e4dbdb">
+                    <strong
+                      style="
+                        font-weight: 600;
+                        font-size: 22px;
+                        color: rgb(237, 10, 10);
+                        text-shadow: 19px 12px 4px rgb(207 204 108 / 50%);
+                        /* -webkit-text-stroke: 0.1px #ffff; */
+                      "
+                    >
+                      MERN Stack </strong
+                    >, Html, Css, JavaScript
+                  </h4>
+                </li>
+                <li>
+                  <h4>
+                    NextJs, Redux, Material UI,and other libraries for the
+                    frontend
+                  </h4>
+                </li>
+                <li>
+                  <h4>Typescript, Nestjs, SQL, Git, postman</h4>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </main>

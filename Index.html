@@ -29,23 +29,67 @@
           <nav>
             <ul>
               <li>
-                <a href="#Home" onclick="navBarATagOnClick(this)">Home</a>
+                <a
+                  href="#Home"
+                  id="homeNvigation"
+                  onclick="navBarATagOnClick(this)"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="#About" onclick="navBarATagOnClick(this)">About</a>
+                <a
+                  href="#About"
+                  id="aboutNvigation"
+                  onclick="navBarATagOnClick(this)"
+                  >About</a
+                >
               </li>
               <li>
-                <a href="#Service" onclick="navBarATagOnClick(this)">Service</a>
+                <a
+                  href="#Service"
+                  id="serviceNvigation"
+                  onclick="navBarATagOnClick(this)"
+                  >Service</a
+                >
               </li>
               <li>
-                <a href="#Portfolio" onclick="navBarATagOnClick(this)"
+                <a
+                  id="protfolioNvigation"
+                  href="#Portfolio"
+                  onclick="navBarATagOnClick(this)"
                   >Portfolio
                 </a>
               </li>
               <li>
-                <a href="#Contact" onclick="navBarATagOnClick(this)">Contact</a>
+                <a
+                  href="#Contact"
+                  id="contactNvigation"
+                  onclick="navBarATagOnClick(this)"
+                  >Contact</a
+                >
               </li>
             </ul>
+            <div class="resumeButtonContainer">
+              <button>
+                <div>Resume</div>
+                <div style="width: 30px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    id="down-arrow"
+                  >
+                    <path
+                      fill="red"
+                      d="m7.293 12.707 4 4a1.004 1.004 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L13 13.586V8a1 1 0 0 0-2 0v5.586l-2.293-2.293a1 1 0 0 0-1.414 1.414Z"
+                    ></path>
+                    <path
+                      fill="yellow"
+                      d="M12 22A10 10 0 1 0 2 12a10.011 10.011 0 0 0 10 10ZM7.293 11.293a1 1 0 0 1 1.414 0L11 13.586V8a1 1 0 0 1 2 0v5.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1.004 1.004 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
           </nav>
         </main>
       </header>
@@ -67,13 +111,31 @@
                 </div>
               </div>
               <h5>Welcome to my page.....</h5>
-              <h5>
-                nb******connect in lindin addd or messegbr
-                <span>
-                  <br />
-                </span>
-                e me in linked in : nb****
-              </h5>
+
+              <div class="linkedinConnect">
+                <p>Contact me</p>
+                <button>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/royhirakp/"
+                  >
+                    <svg
+                      viewBox="55.005 23.8289 333.061 333.0491"
+                      width="35"
+                      height="35"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        id="Path_2520"
+                        data-name="Path 2520"
+                        d="M 338.789 307.609 L 289.44 307.609 L 289.44 230.326 C 289.44 211.898 289.111 188.174 263.773 188.174 C 238.07 188.174 234.138 208.253 234.138 228.985 L 234.138 307.604 L 184.788 307.604 L 184.788 148.679 L 232.164 148.679 L 232.164 170.398 L 232.827 170.398 C 242.491 153.881 260.452 144.017 279.57 144.726 C 329.587 144.726 338.809 177.626 338.809 220.426 L 338.789 307.609 Z M 129.106 126.955 C 107.063 126.96 93.281 103.098 104.298 84.006 C 115.319 64.909 142.877 64.909 153.904 83.996 C 156.418 88.35 157.739 93.29 157.739 98.312 C 157.744 114.13 144.923 126.955 129.106 126.955 M 153.781 307.609 L 104.38 307.609 L 104.38 148.679 L 153.781 148.679 L 153.781 307.609 Z M 363.391 23.851 L 79.582 23.851 C 66.17 23.702 55.169 34.446 55.005 47.858 L 55.005 332.844 C 55.164 346.266 66.165 357.02 79.582 356.876 L 363.391 356.876 C 376.839 357.046 387.881 346.292 388.066 332.844 L 388.066 47.837 C 387.876 34.4 376.834 23.656 363.391 23.831"
+                        fill="#0b65c2"
+                        transform="matrix(1, 0, 0, 1, -7.105427357601002e-15, -3.552713678800501e-15)"
+                      ></path>
+                    </svg>
+                  </a>
+                </button>
+              </div>
             </section>
             <section class="imageContainerSectionTag">
               <div class="imageContainer">
@@ -86,13 +148,15 @@
             </section>
           </main>
         </div>
+        <!-- code for About -->
+
         <div id="About">
           <main>
-            <section>
-              <div class="aboutSectionAnimation">aboutSection Animation</div>
+            <section class="aboutSectionAnimation">
+              <div>aboutSection Animation</div>
             </section>
-            <section>
-              <h1>my self</h1>
+            <section class="myselfSection">
+              <h1>My Self</h1>
               <p>
                 An ambitious individual who is good at problem-solving and
                 programming, with an emphasis on writing clean and maintainable
@@ -100,12 +164,51 @@
                 optimal solutions, aspiring to make a career in software
                 engineering with a focus on full-stack development
               </p>
+              <div>
+                <div class="listofmyInfo">
+                  <ul>
+                    <li id="skills" onclick="showMyInfo(`Skills`)">Skills</li>
+                    <li onclick="showMyInfo(`Experience`)">Experience</li>
+                    <li onclick="showMyInfo(`Education`)">Education</li>
+                  </ul>
+                </div>
+
+                <div id="displayMySelf">
+                  <ul>
+                    <li>
+                      <h4 style="color: #e4dbdb">
+                        <strong
+                          style="
+                            font-weight: 600;
+                            font-size: 22px;
+                            color: rgb(237, 10, 10);
+                            text-shadow: 19px 12px 4px rgb(207 204 108 / 50%);
+                            /* -webkit-text-stroke: 0.1px #ffff; */
+                          "
+                        >
+                          MERN Stack </strong
+                        >, Html, Css, JavaScript
+                      </h4>
+                    </li>
+                    <li>
+                      <h4>
+                        NextJs, Redux, Material UI,and other libraries for the
+                        frontend
+                      </h4>
+                    </li>
+                    <li>
+                      <h4>Typescript, Nestjs, SQL, Git, postman</h4>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </section>
           </main>
         </div>
-        <div id="Service"><main>ser</main></div>
-        <div id="Portfolio"><main>ppp</main></div>
-        <div id="Contact"><main>main</main></div>
+        <!-- code for serviceeee -->
+        <div id="Service" style="height: 300px"><main>ser</main></div>
+        <div id="Portfolio" style="height: 300px"><main>ppp</main></div>
+        <div id="Contact" style="height: 300px"><main>main</main></div>
       </div>
     </div>
 
