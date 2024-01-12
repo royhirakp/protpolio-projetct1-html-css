@@ -8,13 +8,19 @@
   /* height: 450px; */
   padding: 20px 0;
 }
-
+/* css for animation */
 section.aboutSectionAnimation {
   flex: 2;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 section.aboutSectionAnimation div {
-  border: 1px solid;
+  /* border: 1px solid; */
+}
+
+.wrapper {
+  background-color: #4158d0;
+  height: 31.25em;
+  width: 31.25em;
 }
 
 section.myselfSection {

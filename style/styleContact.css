@@ -1,4 +1,8 @@
 #Contact {
+  padding: 80px 0;
+}
+#Contact main h1 {
+  padding-bottom: 20px;
 }
 #Contact main div {
   display: flex;
@@ -10,7 +14,12 @@
 }
 #Contact main div section:first-child {
   /* flex: 1; */
-  border: 1px solid;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  padding-left: 20%;
 }
 /* css for the form */
 
@@ -28,7 +37,7 @@
   gap: 20px;
   box-sizing: border-box;
   border-radius: 16px;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .form-container .form {
@@ -111,7 +120,7 @@
 a.contactDetailsLinkTagContainer {
   display: flex;
   /* justify-content: center; */
-  gap: 5px;
+  gap: 20px;
   align-items: center;
   text-decoration: none;
   color: #ffff;
@@ -122,8 +131,8 @@ a.contactDetailsLinkTagContainer :hover {
   color: rgb(170, 170, 234);
 }
 .IconContainerr {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 .IconContainerr img {
   width: 100%;
@@ -135,8 +144,8 @@ a.contactDetailsLinkTagContainer p {
 }
 
 div.SkypeLinkedSVgBaground {
-  width: 18px;
-  height: 20px;
+  width: 28px;
+  height: 30px;
   background: #ffff;
   color: red;
   position: absolute;
