@@ -278,31 +278,133 @@
             <h1>contact</h1>
             <div>
               <section>
-                <p>email</p>
-                <p>phone no</p>
-                <p>linkedin, github, skype link</p>
+                <a
+                  href="mailto:hirakroy@mail.com"
+                  class="contactDetailsLinkTagContainer"
+                >
+                  <div class="IconContainerr">
+                    <img
+                      src="public/mail-svgrepo-com.svg"
+                      alt=""
+                      style="width: 100%; height: 100%"
+                    />
+                  </div>
+                  <p>hirakroy@mail.com</p>
+                </a>
+
+                <a
+                  href="whatsapp://send?phone=+919002297603"
+                  class="contactDetailsLinkTagContainer"
+                >
+                  <div class="IconContainerr">
+                    <img
+                      src="public/whatsapp-svgrepo-com.svg"
+                      alt=""
+                      style="width: 100%; height: 100%"
+                    />
+                  </div>
+                  <p>+91-9002297603</p>
+                </a>
+
+                <a
+                  href="skype:live:royhirakp?call"
+                  class="contactDetailsLinkTagContainer"
+                >
+                  <div class="IconContainerr" style="position: relative">
+                    <div
+                      style="
+                        width: 18px;
+                        height: 20px;
+                        /* padding: 5px; */
+                        /* border: 1px solid red; */
+                        background: #ffff;
+                        color: red;
+                        position: absolute;
+                        z-index: 1;
+                        top: 5px;
+                        left: 6px;
+                      "
+                    >
+                      <!-- dds -->
+                    </div>
+                    <img
+                      src="public/skype-color-svgrepo-com.svg"
+                      alt=""
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        z-index: 2;
+                      "
+                    />
+                  </div>
+                  <p>live:royhirakp</p>
+                </a>
+
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/royhirakp/"
+                  >
+                    <div
+                      class="IconContainerr"
+                      style="position: relative; width: 35px; height: 35px"
+                    >
+                      <div
+                        class="SkypeLinkedSVgBaground"
+                        style="top: 8px; left: 8px; width: 19px"
+                      >
+                        <!-- dds -->
+                      </div>
+                      <img
+                        src="public/linkedin-svgrepo-com.svg"
+                        alt=""
+                        style="position: relative; z-index: 2"
+                      />
+                    </div>
+                  </a>
+                  <a href="https://github.com/royhirakp" target="_blank">
+                    <div class="IconContainerr" style="position: relative">
+                      <img src="public/github-142-svgrepo-com (1).svg" alt="" />
+                    </div>
+                  </a>
+                </div>
               </section>
               <section>
                 <div class="form-container">
-                  <form class="form">
-                    <div class="form-group">
-                      <label for="email">Company Email</label>
-                      <input type="text" id="email" name="email" required="" />
+                  <form action="" class="form">
+                    <div class="inputContainer">
+                      <label for="name">Name</label>
+                      <input
+                        placeholder="Name"
+                        type="text"
+                        name="name"
+                        id="name"
+                      />
                     </div>
-                    <div class="form-group">
-                      <label for="textarea">How Can We Help You?</label>
+                    <div class="inputContainer">
+                      <label for="email">Email</label>
+                      <input
+                        placeholder="Email.."
+                        type="email"
+                        name="email"
+                        id="email"
+                      />
+                    </div>
+                    <div class="inputContainer">
+                      <label for="message">message</label>
                       <textarea
-                        name="textarea"
-                        id="textarea"
+                        placeholder="Type your Message here..."
+                        name="message"
+                        id="message"
+                        cols="20"
                         rows="10"
-                        cols="50"
                         required=""
-                      >
-                      </textarea>
+                      ></textarea>
                     </div>
-                    <button class="form-submit-btn" type="submit">
-                      Submit
-                    </button>
+                    <div class="submitButtionCotainer">
+                      <input type="submit" name="submit" id="" />
+                    </div>
                   </form>
                 </div>
               </section>
