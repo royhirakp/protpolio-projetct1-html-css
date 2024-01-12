@@ -1,7 +1,5 @@
 div#Service {
   padding: 60px 0 80px 0;
-  background: rgb(177, 239, 115);
-  margin-top: 20px;
 }
 div#Service main h1 {
   padding-bottom: 30px;
@@ -10,6 +8,7 @@ div#Service main h1 {
 div#Service main {
   display: flex;
   gap: 15px;
+  padding: 0 10px;
   /* padding-top: 150px; */
 }
 

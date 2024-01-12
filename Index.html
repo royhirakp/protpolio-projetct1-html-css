@@ -16,17 +16,22 @@
     <link rel="stylesheet" href="style/stylesForHeader.css" />
     <link rel="stylesheet" href="style/stylesForHome.css" />
     <link rel="stylesheet" href="style/stylesForAbout.css" />
-    <link rel="stylesheet" href="/style/styleForService.css" />
-    <link rel="stylesheet" href="/style/styleProtpolio.css" />
-    <link rel="stylesheet" href="/style/styleContact.css" />
+    <link rel="stylesheet" href="style/styleForService.css" />
+    <link rel="stylesheet" href="style/styleProtpolio.css" />
+    <link rel="stylesheet" href="style/styleContact.css" />
     <!-- <link rel="stylesheet" href="../style" /> -->
   </head>
   <body>
     <div class="mainContainer" id="Home">
       <header>
         <main>
-          <div class="logoContainer">
-            <h1><span style="color: antiquewhite">R</span>oy...</h1>
+          <div class="logoContainer" style="max-width: 150px">
+            <img
+              src="public/logoo.png"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+            <!-- <h1><span style="color: antiquewhite">R</span>oy...</h1> -->
             <!-- <p>Full stack developer</p> -->
           </div>
           <nav>
@@ -97,7 +102,7 @@
         </main>
       </header>
       <div class="routeContainer">
-        <div>
+        <div id="HomeContainer">
           <main>
             <section class="textInformation">
               <h3 style="font-weight: 600">Fullstack developer</h3>
@@ -231,13 +236,14 @@
               <h1>protpolio</h1>
             </div>
             <div class="protpolioCradContainer">
+              <h1></h1>
               <div class="card">
                 <div class="content">
                   <div class="back">
                     <div class="back-content">
                       <div
                         style="
-                          background: url(../public/mostnew.png);
+                          background: url(public/mostnew.png);
                           width: 100%;
                           height: 100%;
                         "
@@ -304,6 +310,39 @@
           </main>
         </div>
       </div>
+    </div>
+
+    <div class="horizentalLineContainer">
+      <div style="max-width: 1200px; padding: 10px 8px 0px 8px; margin: auto">
+        <p
+          style="
+            font-weight: 500;
+            font-size: x-small;
+            text-align: center;
+            color: #ffff;
+            margin: 0;
+            padding: 10px 0;
+          "
+        >
+          **Note: created only with HTML, CSS, and JavaScript.
+        </p>
+        <hr style="margin: 0" />
+      </div>
+    </div>
+
+    <div class="copyWriteContainer">
+      <p
+        style="
+          font-weight: 500;
+          font-size: small;
+          text-align: center;
+          color: #ffff;
+          margin: 0;
+          padding: 23px 0;
+        "
+      >
+        © Copyright 2024. by Hirak Roy
+      </p>
     </div>
 
     <script src="script/script.js"></script>
