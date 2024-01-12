@@ -1,4 +1,8 @@
 /* css for the home route  */
+.routeContainer #HomeContainer {
+  padding: 70px 0;
+}
+
 .routeContainer :first-child main {
   overflow: auto;
   height: 400px;
