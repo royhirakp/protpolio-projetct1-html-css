@@ -20,6 +20,9 @@ header div {
 header nav {
   float: right;
   margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header nav ul {
   display: inline-block;

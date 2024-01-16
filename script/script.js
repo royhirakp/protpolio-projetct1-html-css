@@ -106,19 +106,19 @@ function showMyInfo(route) {
       document.getElementById("displayMySelf").innerHTML = `
       <ul>
       <li>
-        <h4 style="color: #e4dbdb">
+        <h5 style="color: #e4dbdb">
           <strong class="mainSlikkMERNstack"> MERN Stack </strong
           >, Html, Css, JavaScript
-        </h4>
+        </h5>
       </li>
       <li>
-        <h4>
+        <h5>
           NextJs, Redux, Material UI,and other libraries for the
           frontend
-        </h4>
+        </h5>
       </li>
       <li>
-        <h4>Typescript, Nestjs, SQL, Git, postman</h4>
+        <h5>Typescript, Nestjs, SQL, Git, postman</h5>
       </li>
     </ul>
         `;
@@ -128,12 +128,12 @@ function showMyInfo(route) {
       
   
       <li>
-        <h4>
+        <h5 style="width:464px;">
           I may not have prior experience in web development, as I
           come from a different background. However, I have acquired
           the necessary technologies that are industry-tested and can
           confidently apply them
-        </h4>
+        </h5>
       </li>
      
     </ul>
@@ -144,16 +144,16 @@ function showMyInfo(route) {
       <ul>
      
       <li>
-        <h4>
+      <h5 style="width:464px;">
           Bachelor of Technology in Electrical Engineering; MAKAUT,
           West Bengal(2020)
-        </h4>
+        </h5>
       </li>
       <li>
-        <h4>
+      <h5 style="width:464px;">
           Completed a 6-month full-stack course on the MERN stack; 10X
           Academy(diploma)
-        </h4>
+        </h5>
       </li>
     </ul>
       
