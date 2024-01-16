@@ -2,11 +2,13 @@
   padding: 80px 0;
 }
 #Contact main h1 {
+  padding: 0 10px;
   padding-bottom: 20px;
 }
 #Contact main div {
   display: flex;
   flex-direction: row;
+  /* padding: 0 10px; */
 }
 #Contact main div section {
   flex: 1;
@@ -20,6 +22,9 @@
   gap: 20px;
   padding: 30px;
   padding-left: 20%;
+}
+.contactSectionContainer {
+  padding: 0 10px;
 }
 /* css for the form */
 

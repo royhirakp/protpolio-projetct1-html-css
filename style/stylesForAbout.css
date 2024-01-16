@@ -6,7 +6,6 @@
   max-width: 1200px;
   margin: auto;
   display: flex;
-  /* height: 450px; */
   padding: 20px 0;
 }
 /* css for animation */
@@ -17,12 +16,231 @@ section.aboutSectionAnimation {
 section.aboutSectionAnimation div {
   /* border: 1px solid; */
 }
+/* \animation  */
 
 .wrapper {
-  background-color: #4158d0;
+  background-color: rgb(127, 127, 177);
   height: 31.25em;
   width: 31.25em;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  box-sizing: inset 0 0 4em rgba(6, 31, 95, 0.2);
+  overflow: hidden;
+  font-size: 10px;
 }
+@media screen and (max-width: 500px) {
+  .wrapper {
+    font-size: 12px;
+  }
+}
+.container {
+  height: 21.87em;
+  width: 21.87em;
+  margin: auto;
+  animation: fly 7s infinite;
+}
+
+@keyframes fly {
+  50% {
+    transform: translateY(-6.25em);
+  }
+}
+
+.broom {
+  background-color: #cfa15d;
+  height: 0.75em;
+  width: 16.25em;
+  position: absolute;
+  top: 11.25em;
+  left: 9.5em;
+  transform: rotate(-5deg);
+  border-radius: 0 0.75em 0.75em 0;
+}
+
+.broom::before {
+  position: absolute;
+  content: "";
+  height: 1.12em;
+  width: 1.25em;
+  /* border: 1px solid; */
+  background: linear-gradient(
+    to right,
+    #cfa15d 32%,
+    #8e4d24 35%,
+    #8e4d24 62%,
+    #cfa15d 65%
+  );
+  bottom: -0.15em;
+}
+
+.broom::after {
+  position: absolute;
+  content: "";
+  height: 1.25em;
+  width: 0;
+  border-left: 5em solid #724c2b;
+  border-top: 2.18em solid transparent;
+  border-bottom: 2.18em solid transparent;
+  bottom: -2.43em;
+  left: -5em;
+}
+.harry {
+  position: absolute;
+  left: 4.37em;
+  top: 19.37em;
+  z-index: 1;
+}
+.cloak {
+  width: 0;
+  height: 5.12em;
+  border-left: 6.25em solid #202020;
+  border-top: 2.5em solid transparent;
+  position: absolute;
+  bottom: 7.62em;
+  left: 9.68em;
+  transform: rotate(-20deg);
+}
+.cloak::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(#202020 95%, #ffffff 95%);
+  height: 3.12em;
+  width: 1.25em;
+  right: -0.93em;
+  top: 1.12em;
+  transform: rotate(-20deg);
+}
+
+.cloak::after {
+  position: absolute;
+  content: "";
+  height: 0.62em;
+  width: 0.93em;
+  background-color: #f3ccb4;
+  top: 4.12em;
+  left: 0.5em;
+  border-radius: 0 0 0.62em 0.62em;
+  transform: rotate(-20deg);
+}
+
+.leg {
+  position: absolute;
+  background-color: #603e21;
+  height: 2.5em;
+  width: 1.25em;
+  bottom: 6.1em;
+  left: 13.43em;
+  transform: rotate(70deg);
+}
+.leg::before {
+  position: absolute;
+  content: "";
+  background-color: #202020;
+  height: 0.5em;
+  width: 1.56em;
+  border-radius: 01.25em 1.25em 0;
+  top: 2.5em;
+}
+.face {
+  position: absolute;
+  background-color: #f3ccb4;
+  height: 4em;
+  width: 4.62em;
+  bottom: 10em;
+  left: 13.12em;
+  border-radius: 0 0 40% 40%;
+}
+
+.hair-1 {
+  /* content: ""; */
+  position: absolute;
+  height: 2.5em;
+  width: 1.25em;
+  background-color: transparent;
+  border-left: 0.62em solid #724c2b;
+  border-radius: 50%;
+  left: -0.56em;
+  top: -0.18em;
+}
+.hair-1::before {
+  position: absolute;
+  content: "";
+  height: 4.37em;
+  width: 2.5em;
+  background-color: transparent;
+  border-left: 1.56em solid #724c2b;
+  border-radius: 50%;
+  left: -1.25em;
+  bottom: 0;
+  transform: rotate(43deg);
+  /* z-index: 5; */
+}
+.hair-1 ::after {
+}
+.hair-2 {
+}
+.hair-2 ::before {
+}
+.hair-2 ::after {
+}
+.hair-3 ::before {
+}
+.hair-3::after {
+}
+.cloud {
+  content: "";
+  background-color: #ffffff;
+  height: 2.18em;
+  width: 7.5em;
+  border-radius: 7.5em;
+  position: absolute;
+  right: -0.12em;
+  animation: cloud-flote 10s infinite;
+}
+.cloud:before {
+  position: absolute;
+  content: "";
+  background-color: #ffff;
+  height: 4.06em;
+  width: 4.06em;
+  border-radius: 50%;
+  bottom: 0.62em;
+  left: 0.93em;
+}
+.cloud:after {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  height: 2.81em;
+  width: 2.81em;
+  border-radius: 50%;
+  bottom: 0.62em;
+  right: 0.62em;
+}
+@keyframes cloud-flote {
+  100% {
+    transform: translateX(-100em);
+  }
+}
+.cloud-1 {
+  top: 3.75em;
+  animation-delay: 3s;
+}
+.cloud-2 {
+  top: 9.37em;
+  /* animation-delay: 8s; */
+}
+.cloud-3 {
+  top: 25em;
+}
+.cloud-4 {
+  top: 15.62em;
+  /* animation-delay: 11.5s; */
+}
+/* my self section  */
 
 section.myselfSection {
   flex: 3;
@@ -34,7 +252,6 @@ section.myselfSection {
 }
 section.myselfSection h1 {
   color: rgb(224, 61, 61);
-  /* padding-left: 40px; */
 }
 
 section.myselfSection p {
