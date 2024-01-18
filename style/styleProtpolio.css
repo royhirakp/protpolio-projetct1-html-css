@@ -6,6 +6,8 @@
   padding-bottom: 20px;
 }
 .protpolioCradContainer {
+  display: flex;
+  gap: 1em;
   padding: 0 10px;
 }
 .card {
@@ -54,12 +56,17 @@
     90deg,
     transparent,
     #f73505,
-    #0ff20f,
-    #33251d,
-    #09b3e6,
+    #333,
+    #333,
+    #333,
+    #30e930,
+    #333,
+    #333,
+    #333,
+    #0d09e6,
     transparent
   );
-  animation: rotation_481 5000ms infinite linear;
+  animation: rotation_481 15s infinite linear;
 }
 
 .back-content {
